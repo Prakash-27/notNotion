@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>notNotion - Easiest Way To Track Your Transactions!</title>
+    <title>notNotion - Manage And Search your Pending Tasks In Clicks!</title>
 
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../master.css"/>
+    <link rel="stylesheet" href="/master.css"/>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="navbar">
-                <a href="" class="logo">
+                <a href="/notNotion/" class="logo">
                     <img src="./images/logo.svg" alt="notNotion"/>
                     <span>notNotion</span>
                 </a>
                 <nav>
                     <ul class="nav-items">
+                        <li>
+                            <a href="/notNotion/JavaScript Budget Tracker Application">Budget Manager</a>
+                        </li>
+                        <li>
+                            <a href="/notNotion/JavaScript Quiz Application">Quiz</a>
+                        </li>
+                        <li>
+                            <a href="/notNotion/JavaScript Kanban Application">Progress Board</a>
+                        </li>
                         <li class="active">
-                            <a href="../JavaScript Budget Tracker Application/">Budget Manager</a>
-                        </li>
-                        <li>
-                            <a href="../JavaScript Quiz Application/">Quiz</a>
-                        </li>
-                        <li>
-                            <a href="../JavaScript Kanban Application/">Progress Board</a>
-                        </li>
-                        <li>
-                            <a href="../JavaScript Todo List Manager/">Todo List</a>
+                            <a href="/notNotion/JavaScript Todo List Manager">Todo List</a>
                         </li>
                         <span class="newsletter">Join Newsletter</span>
                     </ul>
@@ -48,52 +48,45 @@
             <div class="inner-wrap">
                 <!-- <section class="heading">
                     <p class="title">notNotion</p>
-                    <p class="subtitle">Easiest Way To Track Your Transactions!</p>
+                    <p class="subtitle">Manage And Search your Pending Tasks In Clicks!</p>
                 </section> -->
-                <section class="transaction-control">
-                    <div class="actions">
-                        <h3>Add Transaction</h3>
+    
+                <section class="task-manager">
+                    <div class="search-box">
+                        <form class="search">
+                            <input type="text" name="task" placeholder="search task" autocomplete="off"/>
+                            <i class="bi bi-x-circle reset"></i>
+                        </form>                    
+                    </div>
+                    <div class="task-box">
+                        <ul class="tasks">
+                            <li>
+                                <span>VD Recording</span>
+                                <i class="bi bi-trash-fill delete"></i>
+                            </li>
+                            <li>
+                                <span>Editing</span>
+                                <i class="bi bi-trash-fill delete"></i>
+                            </li>
+                            <li>
+                                <span>AD Recording</span>
+                                <i class="bi bi-trash-fill delete"></i>
+                            </li>
+                        </ul>
                         <form class="add">
-                            <input type="text" name="source" placeholder="Source" autocomplete="off" />
-                            <input type="number" name="amount" placeholder="Amount" autocomplete="off" />
-                            <input type="submit" value="Add Transactions" />
-                            <p id="message" class="message"></p>
+                            <input type="text" name="task" placeholder="add task" autocomplete="off"/>
+                            <input type="submit" value="Add"/>
                         </form>
                     </div>
-                    <div class="stats">
-                        <h3>Statistics</h3>
-                        <p class="balance">
-                            Balance: $<span id="balance"></span>
-                        </p>
-                        <p class="income">
-                            Income: $<span id="income"></span>
-                        </p>
-                        <p class="expense">
-                            Expense: $<span id="expense"></span>
-                        </p>
-                    </div>
-                </section>
-                <section class="transaction-history">
-                    <h3>Transaction History</h3>
-                    <div class="records">
-                        <div class="income">
-                            <h3>Income</h3>
-                            <ul class="income-list">
-                                
-                            </ul>
-                        </div>
-                        <div class="expense">
-                            <h3>Expense</h3>
-                            <ul class="expense-list">
-                                
-                            </ul>
-                        </div>
+                    <div class="message">
+                        <span></span>
+                        <button class="clear">Clear All</button>
                     </div>
                 </section>
             </div>
-        </div>
+        </div> 
     </main>
-    
+
     <footer>
         <div class="container">
             <div class="footer">
@@ -121,7 +114,7 @@
         </section>
     </footer>
 
-    <script src="../main.js"></script>
+    <script src="/main.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>
